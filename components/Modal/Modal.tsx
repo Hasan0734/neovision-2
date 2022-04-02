@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, ModalBody } from "reactstrap";
+import { Modal, ModalBody, ModalHeader } from "reactstrap";
 
 const Modals = (props: any) => {
   const { isOpens, setIsOpen, children } = props;
@@ -12,6 +12,9 @@ const Modals = (props: any) => {
         isOpen={isOpens}
         toggle={() => setIsOpen(false)}
       >
+        <ModalHeader toggle={() => setIsOpen(false)}>
+          Holiay Registration/Modification
+        </ModalHeader>
         <ModalBody>{children}</ModalBody>
       </Modal>
     </div>
