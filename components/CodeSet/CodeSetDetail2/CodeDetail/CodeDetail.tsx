@@ -41,7 +41,10 @@ const CodeDetail = (props: any) => {
 
       <div className="d-flex align-items-center mb-3">
         <h5 className="w-25 fs-6">Explanation</h5>
-        <textarea rows={4} className="border m-0 w-75 rounded-3 p-2">
+        <textarea
+          rows={4}
+          className="border m-0 w-75 rounded-3 p-2 resize__none"
+        >
           Recognized defaultValue of hours after work from the base date of work
           (unit: minutes)
         </textarea>

@@ -72,3 +72,7 @@ a {
 .table__bg {
   background-color: #ebebeb;
 }
+
+.resize__none {
+  resize: none;
+}

@@ -1,6 +1,6 @@
 import CardTwo from "../../CardTwo/CardTwo";
 
-const RoleDetails = (props: any) => {
+const RoleDetails2 = (props: any) => {
   const children: any = props.children;
   return (
     <CardTwo>
@@ -22,4 +22,4 @@ const RoleDetails = (props: any) => {
   );
 };
 
-export default RoleDetails;
+export default RoleDetails2;
