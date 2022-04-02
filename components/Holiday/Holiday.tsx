@@ -3,6 +3,7 @@ import Calendar from "react-calendar";
 import Card from "../Card/Card";
 import Modals from "../Modal/Modal";
 import ModalItems from "../ModalItems/ModalItems";
+
 const Holiday = () => {
   const [typeActive, setTypeActive] = useState({ monthly: true, list: false });
   const [value, onChange] = useState(new Date());

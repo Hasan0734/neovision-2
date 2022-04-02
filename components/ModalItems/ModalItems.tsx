@@ -41,7 +41,7 @@ const ModalItems = () => {
           </select>
         </div>
 
-        <div className="d-flex align-items-center mb-3">
+        <div className="d-flex mb-3">
           <label className="w-25 fs-6">Explanation</label>
           <textarea
             rows={6}

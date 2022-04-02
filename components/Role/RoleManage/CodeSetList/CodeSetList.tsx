@@ -1,7 +1,7 @@
 import Card from "../../../Card/Card";
 import Pagination from "../../Pagination/Pagination";
 import TableFilter from "../../TableFilter/TableFilter";
-import CodeSetTable from "../CodeSetTable/CodeSetTable";
+import CodeSetTable from "../RoleTable/RoleTable";
 
 const CodeSetList = (props: any) => {
   return (
