@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
 import { useState } from "react";
-import CodeSetDetail from "../components/CodeSet/CodeSetDetail/CodeSetDetail";
-import CodeSetList from "../components/CodeSet/CodeSetDetail/CodeSetList/CodeSetList";
-import SetDetail from "../components/CodeSet/CodeSetDetail/SetDetail/SetDetail";
+import CodeDetail from "../components/CodeSet/CodeSetDetail2/CodeDetail/CodeDetail";
+import CodeSetDetail2 from "../components/CodeSet/CodeSetDetail2/CodeSetDetail2";
+import CodeSetList2 from "../components/CodeSet/CodeSetDetail2/CodeSetList2/CodeSetList2";
 import Layout from "../components/Layout/Layout";
 
 const Home: NextPage = () => {
@@ -20,12 +20,15 @@ const Home: NextPage = () => {
       <div className="all__pages">
         <div className="row">
           <div className="col-lg-6 col-12 mb-3 mb-lg-0">
-            <CodeSetList />
+            <CodeSetList2 />
           </div>
           <div className="col-lg-6 col-12 mb-3 mb-lg-0">
-            <CodeSetDetail>
+            {/* <CodeSetDetail>
               <SetDetail />
-            </CodeSetDetail>
+            </CodeSetDetail> */}
+            <CodeSetDetail2>
+              <CodeDetail />
+            </CodeSetDetail2>
           </div>
         </div>
       </div>

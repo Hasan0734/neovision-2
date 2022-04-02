@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
 import { useState } from "react";
-import CodeSetDetail from "../components/CodeSet/CodeSetDetail/CodeSetDetail";
-import CodeSetList from "../components/CodeSet/CodeSetDetail/CodeSetList/CodeSetList";
-import SetDetail from "../components/CodeSet/CodeSetDetail/SetDetail/SetDetail";
 import Layout from "../components/Layout/Layout";
+import RoleDetail from "../components/Role/RoleManage/RoleDetail/RoleDetail";
+import RoleDetails from "../components/Role/RoleManage/RoleDetails";
+import RoleList from "../components/Role/RoleManage/RoleList/RoleList";
 
 const Home: NextPage = () => {
   const [cardDetail, setCardDetail] = useState({ status: true, title: true });
@@ -15,17 +15,17 @@ const Home: NextPage = () => {
   return (
     <Layout
       tabActive={tabActive}
-      navData={{ filter: false, title: "Code Management" }}
+      navData={{ filter: false, title: "Role Management" }}
     >
       <div className="all__pages">
         <div className="row">
           <div className="col-lg-6 col-12 mb-3 mb-lg-0">
-            <CodeSetList />
+            <RoleList />
           </div>
           <div className="col-lg-6 col-12 mb-3 mb-lg-0">
-            <CodeSetDetail>
-              <SetDetail />
-            </CodeSetDetail>
+            <RoleDetails>
+              <RoleDetail />
+            </RoleDetails>
           </div>
         </div>
       </div>

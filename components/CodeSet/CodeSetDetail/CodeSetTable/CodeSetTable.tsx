@@ -1,4 +1,4 @@
-import Class from "./ReferanceTable.module.css";
+import Class from "./CodeSetTable.module.css";
 
 const tableData = [
   {
@@ -15,12 +15,12 @@ const tableData = [
   },
 ];
 
-const ReferanceTable = () => {
+const CodeSetTable = () => {
   return (
     <div className={`${Class.table__area} table-responsive rounded-3 border`}>
-      <table className="table  mb-0">
+      <table className="table mb-0">
         <tbody>
-          <tr className="table__bg">
+          <tr className="table__bg fw-bold">
             <td className="text-center">
               Cord set Code <i className="fa-solid fa-caret-down"></i>
             </td>
@@ -33,10 +33,19 @@ const ReferanceTable = () => {
             </td>
           </tr>
           {tableData.map((item, i) => (
-            <tr key={i}>
+            <tr
+              key={i}
+              className={`${tableData.length === i + 1 ? "border-white" : ""}`}
+            >
               <td className="text-center">{item.cord}</td>
               <td className="text-center">{item.name}</td>
-              <td className="text-center">{item.whether}</td>
+              <td
+                className={`${
+                  tableData.length === i + 1 ? "text-danger" : ""
+                } text-center`}
+              >
+                {item.whether}
+              </td>
             </tr>
           ))}
         </tbody>
@@ -45,4 +54,4 @@ const ReferanceTable = () => {
   );
 };
 
-export default ReferanceTable;
+export default CodeSetTable;
