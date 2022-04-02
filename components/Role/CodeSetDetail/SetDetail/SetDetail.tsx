@@ -3,7 +3,6 @@ const SetDetail = () => {
     <div className="card__p">
       <div className="d-flex mb-3">
         <h5 className="w-25">Cord Set code</h5>
-        {/* <p className='border m-0 w-75 rounded-pill p-2'></p> */}
         <input
           className="border m-0 w-75 rounded-3 p-2"
           readOnly

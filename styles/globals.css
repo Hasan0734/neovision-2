@@ -76,3 +76,32 @@ a {
 .resize__none {
   resize: none;
 }
+
+
+/* calendar */
+
+.react-calendar__month-view__weekdays {
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
+  padding: 6px;
+  background: #f7f7f7;
+}
+
+.react-calendar__month-view__days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.react-calendar button {
+  display: flex;
+  height: 135px;
+  text-align: left;
+  border: 1px solid #ededed;
+}
+
+.react-calendar__tile--active {
+  background: #f0f8ff;
+  color: black;
+}
